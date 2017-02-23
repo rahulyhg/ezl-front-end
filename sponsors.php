@@ -1,0 +1,70 @@
+<?php include 'defaulthead.html';?>
+  <body>
+    <?php include 'authenticatednavbar.html';?>
+ <div class="" id="Sponsors">
+    <h1>Partners</h1>
+    <p>Below you will find EZL greatest friends, sponsors and partners.</p>
+  </div>
+  
+  <div id="g2g">
+    <div class='row'>
+      <div class='col-md-8'>
+        <h2>G2G Esports</h2>
+        <br>
+        <h4>We are a multi-lingual organization that organizes tournaments in various eSports in a mature, professional and organized manner. Players get to play against other players in competitions that improve their skills and have a chance to earn prizes. We are very passionate and we live for eSports.</h4>
+        <br>
+      </div>
+      <div class="col-md-4">
+        <a href="http://www.g2gesports.com" target="_blank"><img src="https://drive.google.com/open?id=0B8owFaLOzzx5Y3ZNRjlLdXNrQWs" alt="g2gesports"/></a>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="gyseara">
+    <div class='row'>
+    	<div class="col-md-4">
+        	<a href="https://www.facebook.com/vgsgevents/" target="_blank"><img src="https://drive.google.com/open?id=0B8owFaLOzzx5dmV2ck05Sl9PRkE" alt="gyseara"/></a>
+      	</div>
+      	<div class='col-md-8'>
+        	<h2>Gyseara</h2>
+        	<br>
+        	<h4>We are a multi-lingual organization with a passion for organizing both tournaments and guild meet ups for Singapore players. We also organize Lan parties for players, teams and guilds. It is our love for gaming that makes us want to help grow the community, along with helping gamers to meet other gamers and build meaningful relationships.</h4>
+        	<br>
+     	</div>
+    </div>
+  </div>
+
+  <div id="shiversteel">
+    <div class='row'>
+      <div class='col-md-8'>
+        <h2>Shiversteel</h2>
+        <br>
+        <h4>Vainglory Tournaments for Southeast Asia</h4>
+        <br>
+      </div>
+      <div class="col-md-4">
+        <a href="http://shiversteel.com" target="_blank"><img src="https://drive.google.com/open?id=0B8owFaLOzzx5VDRKQm1MZnNFWjg" class="img-responsive" alt="shiversteel"/></a>
+      </div>
+    </div>
+  </div>
+
+  <div id="CCPartners">
+    <div id="alternatingcurrent">
+    <div class='row'>
+      <div class='col-md-8'>
+        <h2>Alternating Current</h2>
+        <br>
+        <h4>T-Dog Clisis is a shoutCaster and host for VainGlory - Twitch/Mobcrush Streamer - Owner and Host of Alternating Current Podcast for @VainGlory - Member of @GankStars</h4>
+        <br>
+      </div>
+      <div class="col-md-4">
+        <a href="https://twitter.com/TDog_Clisis" target="_blank"><img src="https://pbs.twimg.com/profile_images/822612647216615424/lGyIi0gn.jpg" alt="alternatingcurrent"/></a>
+      </div>
+    </div>
+  </div>  
+  </div>   
+
+    <?php include 'foundationscript.html';?>
+  </body>
+</html>
