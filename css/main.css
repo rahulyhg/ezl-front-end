@@ -1,0 +1,132 @@
+body {
+  padding: 0;
+  font-size: 16px;
+  line-height: 25.875px;
+  font-family: "mf-nexa-227102";
+  color: rgba(158,158,158,1);
+}
+div.wrapper {
+  width: 62%;
+  margin: 0 auto;
+  padding: 50px 0;
+
+}
+p {
+  margin-bottom: 25px;
+  font-family: "mf-nexa-227102";
+  line-height: 1.4em;
+  color: rgba(158,158,158,1);
+}
+blockquote {
+  text-align: center;
+  font-size: 1.2em;
+  font-family: "mf-nexa-227102";
+  line-height: 1.4em;
+  color: rgba(35,35,35,1);
+}
+h1 {
+  font-family: "mf-nexa-227102";
+  line-height: 1.4em;
+  font-size: 3em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(35,35,35,1);
+  text-align: center;
+}
+h2 {
+  font-family: "mf-nexa-227102";
+  font-size: 2.4em;
+  line-height: 1.4em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(35,35,35,1);
+  text-align: center;
+}
+h3 {
+  font-family: "mf-nexa-227099";
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(35,35,35,1);
+  text-align: left;
+}
+div.three-col-gallery {
+  width: auto;
+  text-align: center;
+  margin: 0 auto;
+
+}
+div.three-col-gallery:before {
+  content: "";
+  display: table;
+}
+div.three-col-gallery:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+img.three-col-gallery {
+  width: 30%;
+  float: left;
+  margin: 1.666%;
+}
+ul {
+  margin: 10px 20px;
+  padding: 10px 20px;
+  font-family: "mf-nexa-227095";
+  color: rgba(35,35,35,1);
+}
+p.blockquote {
+  color: rgba(35,35,35,1);
+}
+li {
+  color: rgba(158,158,158,1);
+  font-family: "mf-nexa-227102";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.6em;
+}
+ol {
+  margin: 10px 20px;
+  padding: 10px 20px;
+}
+a {
+  width: 66.609375px;
+  color: rgba(35,35,35,1);
+}
+a a {
+  text-decoration: none;
+}
+strong {
+  font-family: "mf-nexa-227099";
+  color: rgba(35,35,35,1);
+}
+section {
+  margin: 0 auto;
+  text-align: center;
+  width: auto;
+}
+section.dark {
+  font-family: "mf-nexa-227102";
+  background-color: rgba(35,35,35,1);
+  color: rgba(158,158,158,1);
+  padding: 2em;
+}
+h2.light {
+  color: rgba(227,227,227,1);
+}
+h3.light {
+  color: rgba(227,227,227,1);
+}
+p.light {
+  text-align: left;
+}
+blockquote.light {
+  color: rgba(227,227,227,1);
+}
+a.light {
+  color: rgba(227,227,227,1);
+}
+strong.light {
+  color: rgba(227,227,227,1);
+}
