@@ -1,9 +1,81 @@
 <html>
-  <body>
+    <head>
+        <title>Coming Soon!</title>
+        <style>
+            .bgimg{
+                background-image: url(http://wallpapercave.com/wp/9iQJyW7.jpg);
+                height: 100%;
+                background-position: center;
+                background-size: cover;
+                position: relative;
+                color: red;
+                font-family: Impact;
+                font-size: 20px;
+            }
 
-<h2 style="text-align: center;">Coming Soon!</h2>
+            .topright{
+                position: relative;
+                top: 0%;
+                left: 75%;
+                height: 40%;
+                width: 40%;
+            }
 
-<p>Tell us what you think is going to be here and what you want to see here at <a href="https://discord.me/ezl"></a></p>
+            .middle{
+                position: absolute;
+                font-size: 35px;
+                top: 50px;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+            }
 
-  </body>
+            .bottom{
+                position: absolute;
+                bottom: 0;
+                left: 2%;
+                font-size:20px;
+            }
+
+            #timer{
+                color: red;
+                font-size: 80px;
+                font-family: Impact;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body class="bgimg">
+            <div class="topright">
+                <a href="#"><img src="https://pbs.twimg.com/profile_images/831653731309600768/c2Aacczc.jpg" alt="EZL Logo"></a>
+            </div>
+            <div class="middle">
+                <h1>The time is near...</h1>
+            </div>
+            <div class="bottom">
+                <p>Discord Link: <a href="https://discord.me/ezl">Join Now!</a></p>
+            </div>
+        <p id="timer"></p>
+        <script>
+            var countDownDate = new Date("March 13, 2017 00:00:00").getTime();
+
+            var x = setInterval(function(){
+                var now = new Date().getTime();
+                var distance = countDownDate - now;
+
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+                + minutes + "m " + seconds + "s ";
+
+                if(distance < 0){
+                    clearInterval(x);
+                    document.getElementById("timer").innerHTML = "The time has come...";
+                }
+            }, 1000);
+        </script>
+    </body>
 </html>
