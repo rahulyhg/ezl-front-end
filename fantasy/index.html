@@ -10,23 +10,26 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 </head>
+
 <body>
-<table>
+
+<div class="row">
+<table class="scroll hover">
   <thead>
     <tr>
-    	<th style="text-align: center;"><b>Leagues/Rooms</b></th>
-        <th style="text-align: center;"><b>Status</b></th>
-        <th style="text-align: center;"><b>Format</b></th>
-        <th style="text-align: center;"><b>Participants</b></th>
-        <th style="text-align: center;"><b>Entry Fee</b></th>
-        <th style="text-align: center;"><b>Prize</b></th>
-        <th style="text-align: center;"><b>Stream/Vod</b></th>
-        <th style="text-align: center;"><b>Join</b></th>
+    	  <th><h3>Leagues/Rooms</h3></th>
+        <th><h3>Status</h3></th>
+        <th><h3>Format</h3></th>
+        <th><h3>Participants</h3></th>
+        <th><h3>Entry Fee</h3></th>
+        <th><h3>Prize</h3></th>
+        <th><h3>Stream/Vod</h3></th>
+        <th><h3>Join</h3></th>
     </tr>
   </thead>
   <tbody>
 
-    <tr class="active">
+    <tr>
             <td>Skillz League</td>
             <td>Pending</td>
             <td>Classic(Global)</td>
@@ -38,7 +41,7 @@
     </tr>
 
     <!--more rows-->
-     <tr class="active">
+     <tr>
             <td>Yuvi League</td>
             <td>Pending</td>
             <td>Classic(Global)</td>
@@ -50,5 +53,11 @@
     </tr>
   </tbody>
 </table>
+</div>
+
+<script src="js/vendor/foundation.min.js"></script>
+<script src="js/app.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
 </body>
 </html>
