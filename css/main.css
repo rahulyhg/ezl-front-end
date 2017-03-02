@@ -1,7 +1,65 @@
-/* EZL STYLE GUIDE - DO NOT CHANGE SETTINGS PAST THIS LINE! */
+/* TABLES */
+
+.horiz-scroll {
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+table thead, table tbody {
+  border: none;
+}
+
+table thead th {
+  text-align: center;
+  background-color: rgba(227, 227, 227, 1) !important;
+}
+
+tbody tr:nth-child(even) {
+  background-color: rgba(35, 35, 35, 1) !important;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: rgba(46, 46, 46, 1);
+}
+
+tbody tr:hover {
+  background-color: rgba(227, 227, 227, 1) !important;
+}
+
+td a {
+  color: rgba(158, 158, 158, 1);
+}
+
+a.button {
+  margin: 0 auto;
+  color: rgba(227, 227, 227, 1);
+  background-color: rgba(158, 158, 158, 1);
+}
+
+a.button:hover {
+  background-color: rgba(240, 82, 19, 1);
+}
+
+/* EZL STYLE GUIDE - DO NOT CHANGE SETTINGS BELOW THIS LINE! ADD NEW CODE ABOVE!!
+*  light = rgba(227, 227, 227, 1)
+*  medium = rgba(158, 158, 158, 1)
+*  medium-dark = rgba(46, 46, 46, 1) = extra color used for tables
+*  dark = rgba(35, 35, 35, 1)
+*  orange = rgba(240, 82, 19, 1)
+*/
+
 .row {
-  width: 62%;
+  max-width: 62%;
   padding: 50px 0;
+}
+
+.light {
+  color: rgba(227, 227, 227, 1);
 }
 
 body {
@@ -9,6 +67,7 @@ body {
   line-height: 25.875px;
   font-family: "mf-nexa-227102";
   color: rgba(158, 158, 158, 1);
+  background-color: rgba(227, 227, 227, 1);
 }
 
 p {
@@ -16,23 +75,11 @@ p {
   line-height: 1.4em;
 }
 
-p.blockquote {
-  color: rgba(35, 35, 35, 1);
-}
-
-p.light {
-  text-align: left;
-}
-
 blockquote {
   text-align: center;
   font-size: 1.2em;
   line-height: 1.4em;
   color: rgba(35, 35, 35, 1);
-}
-
-blockquote.light {
-  color: rgba(227, 227, 227, 1);
 }
 
 h1 {
@@ -53,10 +100,6 @@ h2 {
   text-align: center;
 }
 
-h2.light {
-  color: rgba(227, 227, 227, 1);
-}
-
 h3 {
   font-family: "mf-nexa-227099";
   font-size: 1.2em;
@@ -64,10 +107,6 @@ h3 {
   text-transform: uppercase;
   color: rgba(35, 35, 35, 1);
   text-align: left;
-}
-
-h3.light {
-  color: rgba(227, 227, 227, 1);
 }
 
 div.three-col-gallery {
@@ -107,7 +146,6 @@ ul {
 
 li {
   color: rgba(158, 158, 158, 1);
-  font-family: "mf-nexa-227102";
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 1.6em;
@@ -122,17 +160,9 @@ a a {
   text-decoration: none;
 }
 
-a.light {
-  color: rgba(227, 227, 227, 1);
-}
-
 strong {
   font-family: "mf-nexa-227099";
   color: rgba(35, 35, 35, 1);
-}
-
-strong.light {
-  color: rgba(227, 227, 227, 1);
 }
 
 section {
@@ -145,15 +175,4 @@ section.dark {
   background-color: rgba(35, 35, 35, 1);
   color: rgba(158, 158, 158, 1);
   padding: 2em;
-}
-
-/* EZL STYLE GUIDE - DO NOT CHANGE SETTINGS ABOVE THIS LINE! */
-
-table {
-  border-collapse: collapse;
-  text-align: center;
-}
-
-td, th {
-    border: 1px solid #e3e3e3;
 }

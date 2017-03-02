@@ -2,26 +2,25 @@
 MENUBAR
  */
 .search {
-  font-family: 'Lato', sans-serif;
-  border: 1px solid #E6E6E6;
+  border: 1px solid rgba(227,227,227,1);
   border-radius: 20px;
   margin: 0 auto 30px auto;
   width: 90%;
   background: url('http://i47.tinypic.com/r02vbq.png') right no-repeat;
   background-size: contain;
-  color: #E6E6E6;
+  color: rgba(227,227,227,1);
 }
 
 .search:hover {
-  background-color: #333;
+  background-color: rgba(46, 46, 46, 1);
 }
 
 .search:focus {
-  background-color: #232323;
+  background-color: rgba(35,35,35,1);
 }
 
 .off-canvas {
-  background-color: #232323;
+  background-color: rgba(35,35,35,1);
 }
 
 .off-canvas-content {
@@ -29,8 +28,7 @@ MENUBAR
 }
 
 .accordion {
-  font-family: 'Lato', sans-serif;
-  background-color: #232323;
+  background-color: rgba(35,35,35,1);
 }
 
 .accordion-title {
@@ -41,48 +39,47 @@ MENUBAR
 
 .accordion-title:link,
 :visited {
-  background-color: #333;
-  color: #FFF;
+  background-color: rgba(46, 46, 46, 1);
+  color: rgba(227,227,227,1);
 }
 
 .accordion-title:hover {
-  background-color: #F05213;
-  color: #232323;
+  background-color: rgba(240,82,19,1);
+  color: rgba(35,35,35,1);
 }
 
 .accordion-title:focus {
-  background-color: #F05213;
-  color: #232323;
+  background-color: rgba(240,82,19,1);
+  color: rgba(35,35,35,1);
 }
 
 .accordion-content {
   border: none !important;
-  background-color: #222;
+  background-color: rgba(35,35,35,1);
   padding: 15px 0 1px 30px;
-  font-size: 16px;
 }
 
 .accordion-content > a:link,
 :visited {
-  color: #FFF;
+  color: rgba(227,227,227,1);
 }
 
 .accordion-content > a:hover {
-  color: #F05213;
+  color: rgba(240,82,19,1);
 }
 
 /*
 CONTENT
 */
 body {
-  background-color: #E6E6E6;
+  background-color: rgba(227,227,227,1);
 }
 
 .horiz-line {
-  border: 1px solid #232323;
+  border: 1px solid rgba(35,35,35,1);
 }
 
 .titlebar {
-  background-color: #333;
+  background-color: rgba(46, 46, 46, 1);
   height: 50px;
 }
