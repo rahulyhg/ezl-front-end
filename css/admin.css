@@ -1,6 +1,5 @@
-/*
-MENUBAR
- */
+/******************************** MENUBAR ********************************/
+
 .search {
   border: 1px solid rgba(227,227,227,1);
   border-radius: 20px;
@@ -68,9 +67,8 @@ MENUBAR
   color: rgba(240,82,19,1);
 }
 
-/*
-CONTENT
-*/
+/******************************** CONTENT ********************************/
+
 body {
   background-color: rgba(227,227,227,1);
 }

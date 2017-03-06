@@ -1,7 +1,7 @@
-<!--<!doctype html>
+<!doctype html>
 <html class="no-js" lang="en" dir="ltr">
   <!-- Remove head and /include after production -->
-<!--<head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,9 +9,29 @@
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
 </head>
 
-<body>-->
+<body>
+
+  <p><a data-open="modal">Click me for a modal</a></p>
+
+  <div class="reveal" id="modal" data-reveal>
+    <h1>modal</h1>
+    <p class="lead">I have another modal inside of me!</p>
+    <a class="button" data-open="modal2">Click me for another modal!</a>
+    <button class="close-button" data-close aria-label="Close reveal" type="button">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+  <!-- nested modal -->
+  <div class="reveal" id="modal2" data-reveal>
+    <h2>modal2</h2>
+    <button class="close-button" data-close aria-label="Close reveal" type="button">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
 
 <div class="row horiz-scroll">
 <table>
@@ -21,7 +41,7 @@
         <th>Status</th>
         <th>Format</th>
         <th>Participants</th>
-        <th>Entry Fee</th>
+        <th nowrap>Entry Fee</th>
         <th>Prize</th>
         <th>Stream/Vod</th>
         <th>Join</th>
@@ -77,9 +97,8 @@
 </table>
 </div>
 
-<!--<script src="js/vendor/foundation.min.js"></script>
+<script src="js/vendor/foundation.js"></script>
 <script src="js/app.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
 </body>
-</html>-->
+</html>

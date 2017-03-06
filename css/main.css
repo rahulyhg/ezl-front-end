@@ -1,51 +1,4 @@
-/* TABLES */
-
-.horiz-scroll {
-  overflow-x: auto;
-}
-
-table {
-  border-collapse: collapse;
-  letter-spacing: 1px;
-  text-align: center;
-}
-
-table thead, table tbody {
-  border: none;
-}
-
-table thead th {
-  text-align: center;
-  background-color: rgba(227, 227, 227, 1) !important;
-}
-
-tbody tr:nth-child(even) {
-  background-color: rgba(35, 35, 35, 1) !important;
-}
-
-tbody tr:nth-child(odd) {
-  background-color: rgba(46, 46, 46, 1);
-}
-
-tbody tr:hover {
-  background-color: rgba(227, 227, 227, 1) !important;
-}
-
-td a {
-  color: rgba(158, 158, 158, 1);
-}
-
-a.button {
-  margin: 0 auto;
-  color: rgba(227, 227, 227, 1);
-  background-color: rgba(158, 158, 158, 1);
-}
-
-a.button:hover {
-  background-color: rgba(240, 82, 19, 1);
-}
-
-/* EZL STYLE GUIDE - DO NOT CHANGE SETTINGS BELOW THIS LINE! ADD NEW CODE ABOVE!!
+/* EZL STYLE GUIDE - DO NOT CHANGE SETTINGS BELOW THIS LINE! ADD NEW CODE AT END!!
 *  light = rgba(227, 227, 227, 1)
 *  medium = rgba(158, 158, 158, 1)
 *  medium-dark = rgba(46, 46, 46, 1) = extra color used for tables
@@ -55,7 +8,13 @@ a.button:hover {
 
 .row {
   max-width: 62%;
-  padding: 50px 0;
+}
+
+@media only screen and (max-width: 40em) {
+  .row {
+  max-width: 100%;
+  text-align: center;
+}
 }
 
 .light {
@@ -152,7 +111,6 @@ li {
 }
 
 a {
-  width: 66.609375px;
   color: rgba(35, 35, 35, 1);
 }
 
@@ -176,3 +134,108 @@ section.dark {
   color: rgba(158, 158, 158, 1);
   padding: 2em;
 }
+
+/* ******************************* TOPBAR ******************************* */
+
+.no-js .top-bar {
+  display: none;
+}
+
+@media screen and (min-width: 40em) {
+  .no-js .top-bar {
+    display: block;
+  }
+
+  .no-js .title-bar {
+    display: none;
+  }
+}
+
+.logo {
+  height: 100px;
+}
+
+.top-bar-right {
+    margin-top: 40px;
+}
+
+.top-bar,
+.top-bar ul,
+.top-bar a {
+  padding: 0 15px;
+  background-color: rgba(35, 35, 35, 1);
+  color: rgba(227, 227, 227, 1);
+  font-family: "mf-nexa-227099";
+  font-size: .9em;
+}
+
+.title-bar {
+  background-color: rgba(35, 35, 35, 1);
+  color: rgba(227, 227, 227, 1);
+  font-family: "mf-nexa-227099";
+}
+
+ul .menu {
+  border: 1px solid rgba(227, 227, 227, 1);
+  padding: 0;
+  font-size: .5em;
+}
+
+/* ******************************* TABLES ******************************* */
+
+.horiz-scroll {
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+table thead, table tbody {
+  border: none;
+}
+
+table thead th {
+  text-align: center;
+  background-color: rgba(227, 227, 227, 1) !important;
+}
+
+tbody tr:nth-child(even) {
+  background-color: rgba(35, 35, 35, 1) !important;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: rgba(46, 46, 46, 1);
+}
+
+tbody tr:hover {
+  background-color: rgba(227, 227, 227, 1) !important;
+}
+
+td a {
+  color: rgba(158, 158, 158, 1);
+}
+
+td a:hover,
+td a:focus {
+  color: rgba(240, 82, 19, 1);
+}
+
+td, li a.button {
+  margin: 0 auto;
+  color: rgba(227, 227, 227, 1);
+  background-color: rgba(158, 158, 158, 1);
+}
+
+td, li a.button:hover {
+  background-color: rgba(240, 82, 19, 1);
+}
+
+td a.button:focus {
+  background-color: rgba(240, 82, 19, 1);
+}
+
+
+/* ******************************* NEW CODE ******************************* */
