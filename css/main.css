@@ -239,3 +239,26 @@ td a.button:focus {
 
 
 /* ******************************* NEW CODE ******************************* */
+
+footer {
+  background-color: rgba(158, 158, 158, 1);
+}
+
+header {
+  background-color: rgba(158, 158, 158, 1);
+  height: 60px;
+}
+
+#logo {
+  width: 5em;
+  height: auto;
+  display: inline-block;
+  position: absolute;
+}
+
+nav li {
+  display: inline-block;
+  position: relative;
+  float: right;
+  padding: 15px;
+}
