@@ -241,24 +241,6 @@ td a.button:focus {
 /* ******************************* NEW CODE ******************************* */
 
 footer {
+  color: rgba(35, 35, 35, 1);
   background-color: rgba(158, 158, 158, 1);
-}
-
-header {
-  background-color: rgba(158, 158, 158, 1);
-  height: 60px;
-}
-
-#logo {
-  width: 5em;
-  height: auto;
-  display: inline-block;
-  position: absolute;
-}
-
-nav li {
-  display: inline-block;
-  position: relative;
-  float: right;
-  padding: 15px;
 }
