@@ -19,10 +19,10 @@ app.config(['$routeProvider', function($routeProvider) {
          controller : 'newsController'
       })
 
-      .when('/fantasy', {
-         templateUrl : './pages/fantasy.html',
-         controller : 'fantasyController'
-      })
+      // .when('/fantasy', {
+      //    templateUrl : './pages/fantasy.html',
+      //    controller : 'fantasyController'
+      // })
 
       .when('/roster', {
          templateUrl : './pages/roster.html',
