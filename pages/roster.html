@@ -4,10 +4,10 @@
       <div class="large-10 large-offset-1 columns">
          <ul class="vertical menu" data-accordion-menu>
             <li ng-repeat="team in FullRoster track by $index">
-               <a href="#">{{ team.id }} | {{ team.name }} | {{ team.shardId }}</a>
-               <ul class="menu vertical nested">
+               <a href="#">{{ team.id | json }} | {{ team.name }} | {{ team.shardId }}</a>
+               <!--<ul class="menu vertical nested">
                   <li><a href="#">Item 1A</a></li>
-               </ul>
+               </ul>-->
             </li>
          </ul>
    </div>

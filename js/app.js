@@ -3,7 +3,7 @@ var app = angular.module("ezlApp", ["ngRoute"]);
 app.run(function($timeout){
     $timeout(function() {
         $(document).foundation();
-    }, 50);
+    }, 100);
 });
 
 app.config(['$routeProvider', function($routeProvider) {
