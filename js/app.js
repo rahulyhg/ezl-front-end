@@ -1,6 +1,10 @@
-//$(document).foundation()
-
 var app = angular.module("ezlApp", ["ngRoute"]);
+
+app.run(function($timeout){
+    $timeout(function() {
+        $(document).foundation();
+    }, 100);
+});
 
 app.config(['$routeProvider', function($routeProvider) {
    $routeProvider
@@ -18,6 +22,11 @@ app.config(['$routeProvider', function($routeProvider) {
       .when('/fantasy', {
          templateUrl : './pages/fantasy.html',
          controller : 'fantasyController'
+      })
+
+      .when('/roster', {
+         templateUrl : './pages/roster.html',
+         controller : 'rosterController'
       });
 }]);
 
@@ -32,6 +41,26 @@ app.controller('newsController', function($scope) {
 
 app.controller('fantasyController', function($scope) {
    $scope.message = 'fantasy controller is working';
+});
+
+app.controller('rosterController', function($scope, $http) {
+   $scope.message = 'roster controller is working';
+
+   $scope.FullRoster = null; //Initialization, important to maintain scope
+
+   $http({
+         method: 'GET',
+         url: 'http://173.80.170.125:8000/data/proteams'
+   }).then(function success(res) {
+         $scope.FullRoster = res.data; //Declaration
+         //alert(JSON.stringify($scope.FullRoster));
+   }, function failure(res) {
+         alert("HTTP failed!");
+   });
+
+
+
+
 });
 
 app.directive("mainNavBar", function() {

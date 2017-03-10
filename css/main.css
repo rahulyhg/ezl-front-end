@@ -240,25 +240,45 @@ td a.button:focus {
 
 /* ******************************* NEW CODE ******************************* */
 
+/* ******************************* General ******************************* */
+
+/* ******************************* Header ******************************* */
+
+/* ******************************* Home ******************************* */
+
+/* ******************************* News ******************************* */
+
+/* ******************************* Fantasy ******************************* */
+
+/* ******************************* Roster ******************************* */
+
+/* ******************************* Sponsors ******************************* */
+
+/* ******************************* Apply ******************************* */
+
+/* ******************************* Profile ******************************* */
+
+/* --- User Profile --- */
+
+/* --- Player Stats --- */
+
+/* --- Dashboard -- (styles will be defined in ./dashboard/css/dashboard.css) --- */
+
+/* --- Settings --- */
+
+/* --- Logout --- */
+
+/* ******************************* Footer ******************************* */
+
 footer {
+  color: rgba(35, 35, 35, 1);
   background-color: rgba(158, 158, 158, 1);
 }
 
-header {
-  background-color: rgba(158, 158, 158, 1);
-  height: 60px;
-}
+/* ******************************* Responsive ******************************* */
 
-#logo {
-  width: 5em;
-  height: auto;
-  display: inline-block;
-  position: absolute;
-}
+@media only screen  and (min-width : 400px)
 
-nav li {
-  display: inline-block;
-  position: relative;
-  float: right;
-  padding: 15px;
-}
+@media only screen  and (min-width : 768px)
+
+@media only screen  and (min-width : 1224px)

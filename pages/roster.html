@@ -1,0 +1,31 @@
+<div class="roster">
+   <h1>Vaingory Roster</h1>
+   <div class="row">
+      <div class="large-10 large-offset-1 columns">
+         <ul class="vertical menu" data-accordion-menu>
+            <li ng-repeat="team in FullRoster track by $index">
+               <a href="#">{{ team.id | json }} | {{ team.name }} | {{ team.shardId }}</a>
+               <!--<ul class="menu vertical nested">
+                  <li><a href="#">Item 1A</a></li>
+               </ul>-->
+            </li>
+         </ul>
+   </div>
+</div>
+
+<!--{{ FullRoster }}-->
+
+</div>
+
+
+
+<!--<ul class="vertical menu" data-accordion-menu>
+  <li>
+    <a href="#">Item 1</a>
+    <ul class="menu vertical nested">
+      <li><a href="#">Item 1A</a></li>
+      <li><a href="#">Item 1B</a></li>
+    </ul>
+  </li>
+  <li><a href="#">Item 2</a></li>
+</ul>-->

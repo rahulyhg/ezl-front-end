@@ -1,11 +1,74 @@
 <header>
-   <div id="logo">
-      <a href="#" title="return to home page"><img src="media/EZL/logo-v1.png"></a>
-   </div>
    <nav>
-      <ul>
-         <li><a href="#news">News</a></li>
-         <li><a href="#fantasy">Fantasy</a></li>
-      </ul>
-   </nav>
+    <div class="title-bar" data-responsive-toggle="topNavBar" data-hide-for="medium">
+      <button class="menu-icon" type="button" data-toggle></button>
+      <div class="title-bar-title">Menu</div>
+    </div>
+
+    <div class="top-bar" data-animate="fade-in fade-out" id="topNavBar">
+
+      <div class="top-bar-left">
+        <ul class="menu">
+          <li><a href="#"><img class="animated fadeInDown logo" src="http://uploads.webflow.com/58a0bf6233b78e327d4977cb/58a1e87483dc90ba6f12a60a_standard-logo-p-500x376.png" /></a></li>
+        </ul>
+      </div>
+
+      <div class="top-bar-right">
+        <ul class="vertical medium-horizontal menu" data-responsive-menu="accordion medium-dropdown">
+
+          <li><a href="#news">News</a></li>
+
+          <!--<li class="has-submenu">
+              <a href="#">Stats</a>
+              <ul class="vertical menu">
+                <li><a href="#stats">Stats</a></li>
+                <li><a href="#scoreboard">Scoreboard</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#standings">Standings</a></li>
+              </ul>
+          </li>-->
+
+          <li><a href="#fantasy">Fantasy</a></li>
+          <li><a href="#roster">Roster</a></li>
+          <!--<li><a href="#tutoring">Tutoring</a></li>
+
+          <li class="has-submenu">
+            <a href="#">Community</a>
+            <ul class="vertical menu">
+              <li><a href="#gamecompetitive">Competitive</a></li>
+              <li><a href="#gamefreeagents">Free Agents</a></li>
+              <li><a href="#gameguilds">Guilds</a></li>
+              <li><a href="#gameteams">Teams</a></li>
+              <li><a href="#cc">Content Creators</a></li>
+              <li><a href="#fanmedia">Fan Media</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#media">Media</a></li>
+          <li><a href="#shop">Shop</a></li>-->
+          <li><a href="#sponsors">Sponsors</a></li>
+          <li><a href="#Apply">Apply</a></li>
+
+          <li class="has-submenu">
+            <a href="#">Profile</a>
+              <ul class="vertical menu">
+                <li><a href="#user_profile">User Profile</a></li>
+                <!--<li><a href="#resume">Curriculum Vitae</a></li>
+                <li><a href="#inbox">Inbox</a></li>
+                <li><a href="#apply">Apply</a></li>-->
+                <li><a href="#player_stats">Player Stats</a></li>
+                <li><a href="./dashboard.html">Dashboard</a></li>
+                <li><a href="#settings">Settings</a></li>
+                <li><a href="#logout">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<ul class="menu">
+    <li><input type="search" placeholder="Search"></li>
+    <li><button type="button" class="button">Search</button></li>
+</ul>
 </header>
