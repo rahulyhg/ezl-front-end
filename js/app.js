@@ -57,7 +57,7 @@ app.config(['$routeProvider', function($routeProvider) {
 }]);
 
 app.controller('mainController', function($scope) {
-   $scope.message = 'main controller is working';
+   $scope.message = 'Main Controller is working!';
    $scope.bShow = false;
 });
 
