@@ -93,6 +93,16 @@ app.config(['$routeProvider', function ($routeProvider) {
     .when('/settings', {
       templateUrl: './pages/profile/settings.html',
       controller: 'settingsController'
+    })
+    
+    .when('/register', {
+      templateUrl: './pages/register.html',
+      controller: 'registerController'
+    })
+    
+    .when('/login', {
+      templateUrl: './pages/login.html',
+      controller: 'loginController'
     });
 }]);
 
