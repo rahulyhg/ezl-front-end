@@ -1,12 +1,12 @@
-var app = angular.module("dashboard", ["ngRoute"]);
+var db_app = angular.module("dashboard", ["ngRoute"]);
 
-app.run(function($timeout){
+db_app.run(function($timeout){
     $timeout(function() {
         $(document).foundation();
     }, 100);
 });
 
-app.config(['$routeProvider', function($routeProvider) {
+db_app.config(['$routeProvider', function($routeProvider) {
    $routeProvider
 
       .when('/', {
@@ -20,23 +20,23 @@ app.config(['$routeProvider', function($routeProvider) {
       });
 }]);
 
-app.controller('db_homeController', function($scope) {
+db_app.controller('db_homeController', function($scope) {
    $scope.message = 'db_home controller is working';
    $scope.bShow = false;
 });
 
-app.controller('db_new_postController', function($scope) {
+db_app.controller('db_new_postController', function($scope) {
    $scope.message = 'db_new_post controller is working';
 });
 
-app.directive("dbNavBar", function() {
+db_app.directive("dbNavBar", function() {
    return {
       restrict: "AECM",
       templateUrl: "./include/db_header.html" 
    };
 });
 
-app.directive("dbFooter", function() {
+db_app.directive("dbFooter", function() {
    return {
       restrict: "AECM",
       templateUrl: "./include/db_footer.html"

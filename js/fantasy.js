@@ -1,12 +1,12 @@
-var app = angular.module("fantasy", ["ngRoute"]);
+var fantasy_app = angular.module("fantasy", ["ngRoute"]);
 
-app.run(function($timeout){
+fantasy_app.run(function($timeout){
     $timeout(function() {
         $(document).foundation();
     }, 100);
 });
 
-app.config(['$routeProvider', function($routeProvider) {
+fantasy_app.config(['$routeProvider', function($routeProvider) {
    $routeProvider
 
       .when('/', {
@@ -20,23 +20,23 @@ app.config(['$routeProvider', function($routeProvider) {
       });
 }]);
 
-app.controller('fantasy_homeController', function($scope) {
+fantasy_app.controller('fantasy_homeController', function($scope) {
    $scope.message = 'fantasy_home controller is working';
    $scope.bShow = false;
 });
 
-app.controller('fantasy_joinController', function($scope) {
+fantasy_app.controller('fantasy_joinController', function($scope) {
    $scope.message = 'fantasy_join controller is working';
 });
 
-app.directive("fantasyNavBar", function() {
+fantasy_app.directive("fantasyNavBar", function() {
    return {
       restrict: "AECM",
       templateUrl: "./include/fantasy_header.html" 
    };
 });
 
-app.directive("fantasyFooter", function() {
+fantasy_app.directive("fantasyFooter", function() {
    return {
       restrict: "AECM",
       templateUrl: "./include/fantasy_footer.html"
