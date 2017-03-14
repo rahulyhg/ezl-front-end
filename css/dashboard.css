@@ -1,4 +1,4 @@
-/*
+/* EZL STYLE GUIDE
 *  light = rgba(227, 227, 227, 1)
 *  medium = rgba(158, 158, 158, 1)
 *  medium-dark = rgba(46, 46, 46, 1) = extra color used for tables
@@ -6,15 +6,140 @@
 *  orange = rgba(240, 82, 19, 1)
 */
 
-/******************************** MENU BAR ********************************/
+.row {
+  max-width: 62%;
+}
+
+@media only screen and (max-width: 40em) {
+  .row {
+  max-width: 100%;
+}
+}
+
+.light {
+  color: rgba(227, 227, 227, 1);
+}
+
+body {
+  font-size: 16px;
+  line-height: 25.875px;
+  font-family: "mf-nexa-227102";
+  color: rgba(158, 158, 158, 1);
+  background-color: rgba(227, 227, 227, 1);
+}
+
+p {
+  margin-bottom: 25px;
+  line-height: 1.4em;
+}
+
+blockquote {
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  color: rgba(35, 35, 35, 1);
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 1.4em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(35, 35, 35, 1);
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.4em;
+  line-height: 1.4em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(35, 35, 35, 1);
+  text-align: center;
+}
+
+h3 {
+  font-family: "mf-nexa-227099";
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(35, 35, 35, 1);
+  text-align: left;
+}
+
+div.three-col-gallery {
+  width: auto;
+  text-align: center;
+  margin: 0 auto;
+}
+
+div.three-col-gallery:before {
+  content: "";
+  display: table;
+}
+
+div.three-col-gallery:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+img.three-col-gallery {
+  width: 30%;
+  float: left;
+  margin: 1.666%;
+}
+
+ol {
+  margin: 10px 20px;
+  padding: 10px 20px;
+}
+
+ul {
+  font-family: "mf-nexa-227095";
+  color: rgba(35, 35, 35, 1);
+}
+
+li {
+  color: rgba(158, 158, 158, 1);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+a {
+  color: rgba(35, 35, 35, 1);
+}
+
+a a {
+  text-decoration: none;
+}
+
+strong {
+  font-family: "mf-nexa-227099";
+  color: rgba(35, 35, 35, 1);
+}
+
+section {
+  margin: 0 auto;
+  text-align: center;
+  width: auto;
+}
+
+section.dark {
+  background-color: rgba(35, 35, 35, 1);
+  color: rgba(158, 158, 158, 1);
+  padding: 2em;
+}
+
+/******************************** MENUBAR ********************************/
 .menu-content-separate {
-  height: 70px;
+  height: 120px;
 }
 
 .nav-container {
   position: fixed;
   width: 100%;
-  height: 70px;
+  height: 120px;
   background: rgba(35, 35, 35, 1);
 }
 
@@ -24,8 +149,7 @@
   top: 0;
   right: 0;
   background: rgba(35, 35, 35, 1);
-  height: 70px;
-  width: 70px;
+  width: 100px;
 }
 
 .nav-dropdown {
@@ -36,11 +160,11 @@
 
 .logo {
   position: absolute;
-  padding-left: 20px;
+  top: -20px;
 }
 
 .logo a img {
-  height: 75px;
+  height: 10em;
 }
 
 nav {
@@ -51,18 +175,20 @@ nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  right:0;
 }
 
 nav ul li {
   float: left;
   position: relative;
+  text-align: right;
 }
 
 nav ul li a,
 nav ul li a:visited {
   display: block;
   padding: 0 20px;
-  line-height: 70px;
+  line-height: 120px;
   background: rgba(35, 35, 35, 1);
   color: rgba(227, 227, 227, 1);
   text-decoration: none;
@@ -72,7 +198,7 @@ nav ul li a:hover,
 nav ul li a:visited:hover,
 nav ul li a:focus {
   background: rgba(240, 82, 19, 1);
-  color: rgba(227, 227, 227, 1);
+  color: rgba(35, 35, 35, 1);
 }
 
 nav ul li a:not(:only-child):after,
@@ -82,7 +208,7 @@ nav ul li a:visited:not(:only-child):after {
 }
 
 nav ul li ul li {
-  min-width: 190px;
+  width: 100%;
 }
 
 nav ul li ul li a {
@@ -92,10 +218,9 @@ nav ul li ul li a {
 
 #nav-toggle {
   position: absolute;
-  left: 18px;
-  top: 22px;
+  left: 35px;
+  top: 55px;
   cursor: pointer;
-  padding: 10px 35px 16px 0px;
 }
 
 #nav-toggle span,
@@ -149,20 +274,25 @@ nav ul li ul li a {
 
   nav {
     width: 100%;
-    padding: 70px 0 15px;
+    padding: 120px 0;
   }
+
   nav ul {
     display: none;
   }
+
   nav ul li {
     float: none;
+    text-align: left;
   }
+
   nav ul li a {
-    padding: 15px;
+    padding: 15px 30px;
     line-height: 20px;
   }
+
   nav ul li ul li a {
-    padding-left: 30px;
+    padding: 15px 45px;
   }
 
   .nav-dropdown {
@@ -176,12 +306,11 @@ nav ul li ul li a {
   border: 1px solid rgba(227,227,227,1);
   border-radius: 20px;
   width: 32%;
-  margin: 15px 8em;
+  margin: 30px 12em;
   background: url('http://i47.tinypic.com/r02vbq.png') right no-repeat;
   background-size: contain;
   color: rgba(227,227,227,1);
   text-align: center;
-  float: left;
 }
 
 .search:hover {
@@ -193,10 +322,6 @@ nav ul li ul li a {
 }
 
 /******************************** CONTENT ********************************/
-
-body {
-  background-color: rgba(227,227,227,1);
-}
 
 .horiz-line {
   border: 1px solid rgba(35,35,35,1);
