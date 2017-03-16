@@ -23,7 +23,7 @@
   });
 })(jQuery);
 
-var fantasy_app = angular.module("fantasy", ["ngRoute"]);
+var fantasy_app = angular.module("fantasyApp", ["ngRoute"]);
 
 fantasy_app.run(function($timeout){
     $timeout(function() {
@@ -39,9 +39,19 @@ fantasy_app.config(['$routeProvider', function($routeProvider) {
          controller : 'fantasy_homeController'
       })
 
-      .when('/join', {
+      .when('/fantasy_how_to_play', {
+         templateUrl : './fantasy/fantasy_how_to_play.html',
+         controller : 'fantasy_how_to_playController'
+      })
+      
+      .when('/fantasy_join', {
          templateUrl : './fantasy/fantasy_join.html',
          controller : 'fantasy_joinController'
+      })
+      
+      .when('/fantasy_create', {
+         templateUrl : './fantasy/fantasy_create.html',
+         controller : 'fantasy_createController'
       });
 }]);
 
@@ -50,8 +60,16 @@ fantasy_app.controller('fantasy_homeController', function($scope) {
    $scope.bShow = false;
 });
 
+fantasy_app.controller('fantasy_how_to_playController', function($scope) {
+   $scope.message = 'fantasy_how_to_play controller is working';
+});
+
 fantasy_app.controller('fantasy_joinController', function($scope) {
    $scope.message = 'fantasy_join controller is working';
+});
+
+fantasy_app.controller('fantasy_createController', function($scope) {
+   $scope.message = 'fantasy_create controller is working';
 });
 
 fantasy_app.directive("fantasyNavBar", function() {
