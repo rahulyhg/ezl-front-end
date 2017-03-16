@@ -1,12 +1,3 @@
-var app = angular.module("ezlApp", ["ngRoute"]);
-
-// Delayed Foundation Reinitialization
-app.run(function ($timeout) {
-  $timeout(function () {
-    $(document).foundation();
-  }, 100);
-});
-
 // navbar
 (function ($) {
   $(function () {
@@ -31,6 +22,15 @@ app.run(function ($timeout) {
     });
   });
 })(jQuery);
+
+var app = angular.module("ezlApp", ["ngRoute"]);
+
+// Delayed Foundation Reinitialization
+app.run(function ($timeout) {
+  $timeout(function () {
+    $(document).foundation();
+  }, 100);
+});
 
 app.config(['$routeProvider', function ($routeProvider) {
   $routeProvider
@@ -94,12 +94,12 @@ app.config(['$routeProvider', function ($routeProvider) {
       templateUrl: './pages/profile/settings.html',
       controller: 'settingsController'
     })
-    
+
     .when('/register', {
       templateUrl: './pages/register.html',
       controller: 'registerController'
     })
-    
+
     .when('/login', {
       templateUrl: './pages/login.html',
       controller: 'loginController'
