@@ -7,26 +7,35 @@
 */
 
 /******************************** General ********************************/
+.wrapper {
+    width: 62%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
 .row {
-  max-width: 62%;
+    width: 62%;
 }
 
-@media only screen and (max-width: 40em) {
+@media only screen and (max-width: 768px) {
+  .wrapper,
   .row {
-  max-width: 100%;
-}
+      width: 92%;
+  }
 }
 
-.light {
-  color: rgba(227, 227, 227, 1);
+html {
+  position: relative;
+  min-height: 100%;
 }
 
 body {
-  font-size: 16px;
+  font-size: 1em;
   line-height: 25.875px;
   font-family: "mf-nexa-227102";
   color: rgba(158, 158, 158, 1);
-  background-color: rgba(227, 227, 227, 1);
+  background: rgba(35, 35, 35, 1) url("../media/ezl/Scorch-backdrop-2.5k.png") no-repeat fixed center;
+  margin-bottom: 194px; /* sticky footer height */
 }
 
 p {
@@ -46,7 +55,7 @@ h1 {
   line-height: 1.4em;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: rgba(35, 35, 35, 1);
+  color: rgba(227, 227, 227, 1);
   text-align: center;
 }
 
@@ -55,7 +64,7 @@ h2 {
   line-height: 1.4em;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: rgba(35, 35, 35, 1);
+  color: rgba(227, 227, 227, 1);
   text-align: center;
 }
 
@@ -64,36 +73,8 @@ h3 {
   font-size: 1.2em;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: rgba(35, 35, 35, 1);
+  color: rgba(227, 227, 227, 1);
   text-align: left;
-}
-
-div.three-col-gallery {
-  width: auto;
-  text-align: center;
-  margin: 0 auto;
-}
-
-div.three-col-gallery:before {
-  content: "";
-  display: table;
-}
-
-div.three-col-gallery:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-img.three-col-gallery {
-  width: 30%;
-  float: left;
-  margin: 1.666%;
-}
-
-ol {
-  margin: 10px 20px;
-  padding: 10px 20px;
 }
 
 ul {
@@ -120,28 +101,12 @@ strong {
   color: rgba(35, 35, 35, 1);
 }
 
-section {
-  margin: 0 auto;
-  text-align: center;
-  width: auto;
-}
-
-section.dark {
-  background-color: rgba(35, 35, 35, 1);
-  color: rgba(158, 158, 158, 1);
-  padding: 2em;
-}
-
 /******************************** MENUBAR ********************************/
-.menu-content-separate {
-  height: 120px;
-}
-
 .nav-container {
-  position: fixed;
   width: 100%;
-  height: 120px;
+  height: 121px;
   background: rgba(35, 35, 35, 1);
+  border-bottom: 1px solid rgba(158, 158, 158, 1);
 }
 
 .nav-mobile {
@@ -170,6 +135,7 @@ section.dark {
 
 nav {
   float: right;
+  border-bottom: 1px solid rgba(158, 158, 158, 1);
 }
 
 nav ul {
@@ -276,10 +242,12 @@ nav ul li ul li a {
   nav {
     width: 100%;
     padding: 120px 0;
+    border: none;
   }
 
   nav ul {
     display: none;
+    border-bottom: 1px solid rgba(158, 158, 158, 1);
   }
 
   nav ul li {
@@ -299,6 +267,59 @@ nav ul li ul li a {
   .nav-dropdown {
     position: static;
   }
+}
+
+/* ******************************* TABLES ******************************* */
+
+.horiz-scroll {
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+table thead, table tbody {
+  border: none;
+}
+
+table thead th {
+  text-align: center;
+  background-color: rgba(227, 227, 227, 1) !important;
+}
+
+tbody tr:nth-child(even) {
+  background-color: rgba(35, 35, 35, 1) !important;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: rgba(46, 46, 46, 1);
+}
+
+tbody tr:hover {
+  background-color: rgba(227, 227, 227, 1) !important;
+}
+
+td a {
+  color: rgba(158, 158, 158, 1);
+}
+
+td a:hover,
+td a:focus {
+  color: rgba(240, 82, 19, 1);
+}
+
+td a.button {
+  margin: 0 auto;
+  color: rgba(227, 227, 227, 1);
+  background-color: rgba(158, 158, 158, 1);
+}
+
+td a.button:hover,
+td a.button:focus {
+  background-color: rgba(240, 82, 19, 1);
 }
 
 /******************************** SEARCH BAR ********************************/
@@ -322,56 +343,52 @@ nav ul li ul li a {
   background-color: rgba(35,35,35,1);
 }
 
-/******************************** CONTENT ********************************/
-
-body {
-  background-color: rgba(227,227,227,1);
-  background-image: url("../media/ezl/Scorch-backdrop-2.5k.png");
-}
-
-.horiz-line {
-  border: 1px solid rgba(35,35,35,1);
-}
-
-
-/******************************** Home ********************************/
-
-
-
-
-/******************************** How to Play ********************************/
-
-
-
-
-/******************************** Join ********************************/
-
-
-
-
-/******************************** Create ********************************/
-
-
-
-
 /******************************** Footer ********************************/
 
-footer, footer h3, footer a{
-  background: rgba(35, 35, 35, 1);
-  color: rgba(227, 227, 227, 1);
-  text-align: center;
+@media only screen and (max-width: 768px) {
+  body {
+    margin-bottom: 300px;
+  }
+  footer {
+    min-height: 300px;
+  }
 }
 
-footer h5 {
-  padding: 10px;
+footer {
+  background: rgba(46, 46, 46, 1);
+  border-top: 1px solid rgba(158, 158, 158, 1);
+  color: rgba(227, 227, 227, 1);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  min-height: 194px;
 }
 
 footer hr {
-  border: 5px solid rgba(227, 227, 227, 1);
-  margin-bottom: 0px;
-  margin-top: 0px;
+  border-color: rgba(158, 158, 158, 1);
+  margin: 10px auto;
 }
 
 footer div {
-  margin: 10px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+footer h3 {
+  font-weight: bold;
+  text-align: center;
+  margin: 10px auto;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: rgba(240, 82, 19, 1);
+}
+
+footer a:hover,
+footer a:focus {
+  color: rgba(227, 227, 227, 1);
 }
