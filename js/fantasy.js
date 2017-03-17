@@ -35,8 +35,8 @@ fantasy_app.config(['$routeProvider', function($routeProvider) {
    $routeProvider
 
       .when('/', {
-         templateUrl : './fantasy/fantasy_home.html',
-         controller : 'fantasy_homeController'
+         templateUrl : './fantasy/fantasy_join.html',
+         controller : 'fantasy_joinController'
       })
 
       .when('/fantasy_how_to_play', {
@@ -44,10 +44,10 @@ fantasy_app.config(['$routeProvider', function($routeProvider) {
          controller : 'fantasy_how_to_playController'
       })
       
-      .when('/fantasy_join', {
-         templateUrl : './fantasy/fantasy_join.html',
-         controller : 'fantasy_joinController'
-      })
+      // .when('/fantasy_join', {
+      //    templateUrl : './fantasy/fantasy_join.html',
+      //    controller : 'fantasy_joinController'
+      // })
       
       .when('/fantasy_create', {
          templateUrl : './fantasy/fantasy_create.html',
