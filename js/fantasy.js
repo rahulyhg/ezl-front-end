@@ -13,8 +13,8 @@ fantasy_app.config(['$routeProvider', function($routeProvider) {
    $routeProvider
 
       .when('/', {
-         templateUrl : './fantasy/fantasy_join.html',
-         controller : 'fantasy_joinController'
+         templateUrl : './fantasy/fantasy_home.html',
+         controller : 'fantasy_homeController'
       })
 
       .when('/fantasy_how_to_play', {
@@ -22,20 +22,20 @@ fantasy_app.config(['$routeProvider', function($routeProvider) {
          controller : 'fantasy_how_to_playController'
       })
       
-      // .when('/fantasy_join', {
-      //    templateUrl : './fantasy/fantasy_join.html',
-      //    controller : 'fantasy_joinController'
-      // })
+       .when('/fantasy_room', {
+          templateUrl : './fantasy/fantasy_room.html',
+          controller : 'fantasy_roomController'
+       })
 
       .when('/fantasy_join', {
          templateUrl : './fantasy/fantasy_join.html',
          controller : 'fantasy_joinController'
-      })
-
-      .when('/fantasy_create', {
-         templateUrl : './fantasy/fantasy_create.html',
-         controller : 'fantasy_createController'
       });
+
+      // .when('/fantasy_create', {
+      //    templateUrl : './fantasy/fantasy_create.html',
+      //    controller : 'fantasy_createController'
+      // });
 }]);
 
 fantasy_app.controller('fantasy_homeController', function($scope) {
@@ -47,12 +47,12 @@ fantasy_app.controller('fantasy_how_to_playController', function($scope) {
    $scope.message = 'fantasy_how_to_play controller is working';
 });
 
-fantasy_app.controller('fantasy_joinController', function($scope) {
-   $scope.message = 'fantasy_join controller is working';
+fantasy_app.controller('fantasy_roomController', function($scope) {
+   $scope.message = 'fantasy_room controller is working';
 });
 
-fantasy_app.controller('fantasy_createController', function($scope) {
-   $scope.message = 'fantasy_create controller is working';
+fantasy_app.controller('fantasy_joinController', function($scope) {
+   $scope.message = 'fantasy_join controller is working';
 });
 
 fantasy_app.directive("fantasyNavBar", function() {
