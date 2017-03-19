@@ -32,6 +32,21 @@ fantasy_app.config(['$routeProvider', function ($routeProvider) {
       controller: 'fantasy_joinController'
     })
 
+    .when('/fantasy_draft', {
+      templateUrl: './fantasy/fantasy_draft.html',
+      controller: 'fantasy_draftController'
+    })
+
+    .when('/fantasy_team', {
+      templateUrl: './fantasy/fantasy_team.html',
+      controller: 'fantasy_teamController'
+    })
+
+    .when('/fantasy_matchup', {
+      templateUrl: './fantasy/fantasy_matchup.html',
+      controller: 'fantasy_matchupController'
+    })
+
     .when('/login', {
       templateUrl: './pages/login.html',
       controller: 'loginController'
@@ -63,6 +78,18 @@ fantasy_app.controller('fantasy_roomController', function ($scope) {
 
 fantasy_app.controller('fantasy_joinController', function ($scope) {
   $scope.message = 'fantasy_join controller is working';
+});
+
+fantasy_app.controller('fantasy_draftController', function ($scope) {
+  $scope.message = 'fantasy_draft controller is working';
+});
+
+fantasy_app.controller('fantasy_teamController', function ($scope) {
+  $scope.message = 'fantasy_team controller is working';
+});
+
+fantasy_app.controller('fantasy_matchupController', function ($scope) {
+  $scope.message = 'fantasy_matchup controller is working';
 });
 
 fantasy_app.controller('loginController', function ($scope) {
