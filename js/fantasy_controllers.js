@@ -9,6 +9,21 @@ fantasy_app.controller('fantasy_how_to_playController', function ($scope) {
 
 fantasy_app.controller('fantasy_roomController', function ($scope) {
   $scope.message = 'fantasy_room controller is working';
+
+  //Need to change this to make a call 
+
+  $scope.FullRoster = null; //Initialization, important to maintain scope
+
+  $http({
+    method: 'GET',
+    url: 'http://173.80.170.125:8000/data/proteams'
+  }).then(function success(res) {
+    $scope.FullRoster = res.data; //Declaration
+    //alert(JSON.stringify($scope.FullRoster));
+  }, function failure(res) {
+    alert("HTTP failed!");
+  });
+
 });
 
 fantasy_app.controller('fantasy_joinController', function ($scope) {
