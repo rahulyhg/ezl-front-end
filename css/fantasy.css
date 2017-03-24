@@ -6,6 +6,16 @@
 *  orange = rgba(240, 82, 19, 1)
 */
 
+@font-face {
+  font-family: "NexaLight";
+  src: url('./fonts/Nexa_Free_Light-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: "NexaBold";
+  src: url('./fonts/Nexa_Free_Bold-webfont.woff') format('woff');
+}
+
 /******************************** General ********************************/
 .wrapper {
     width: 62%;
@@ -13,14 +23,9 @@
     padding: 50px 0;
 }
 
-.row {
-    width: 62%;
-}
-
 @media only screen and (max-width: 768px) {
-  .wrapper,
-  .row {
-      width: 92%;
+  .wrapper {
+      width: 96%;
   }
 }
 
@@ -30,16 +35,15 @@ html {
 }
 
 body {
-  font-size: 1em;
+  font-family: "NexaLight";
   line-height: 25.875px;
-  font-family: "mf-nexa-227102";
   color: rgba(158, 158, 158, 1);
-  background: rgba(35, 35, 35, 1) url("../media/ezl/Scorch-backdrop-2.5k.png") no-repeat fixed center;
+  background: url("../media/ezl/Scorch-backdrop-2.5k.png") no-repeat fixed center;
   margin-bottom: 194px; /* sticky footer height */
 }
 
 p {
-  margin-bottom: 25px;
+  margin: 25px 0;
   line-height: 1.4em;
 }
 
@@ -51,6 +55,7 @@ blockquote {
 }
 
 h1 {
+  font-family: "NexaBold";
   font-size: 3em;
   line-height: 1.4em;
   letter-spacing: 1px;
@@ -60,6 +65,7 @@ h1 {
 }
 
 h2 {
+  font-family: "NexaBold";
   font-size: 2.4em;
   line-height: 1.4em;
   letter-spacing: 1px;
@@ -69,7 +75,7 @@ h2 {
 }
 
 h3 {
-  font-family: "mf-nexa-227099";
+  font-family: "NexaBold";
   font-size: 1.2em;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -78,7 +84,6 @@ h3 {
 }
 
 ul {
-  font-family: "mf-nexa-227095";
   color: rgba(35, 35, 35, 1);
   list-style-type: none;
 }
@@ -98,7 +103,7 @@ a a {
 }
 
 strong {
-  font-family: "mf-nexa-227099";
+  font-family: "NexaBold";
   color: rgba(35, 35, 35, 1);
 }
 
@@ -287,6 +292,7 @@ table thead, table tbody {
 }
 
 table thead th {
+  font-family: "NexaBold";
   text-align: center;
   background-color: rgba(227, 227, 227, 1) !important;
 }
@@ -300,22 +306,24 @@ tbody tr:nth-child(odd) {
 }
 
 tbody tr:hover {
-  background-color: rgba(227, 227, 227, 1) !important;
-}
-
-td a {
-  color: rgba(158, 158, 158, 1);
+  background-color: rgba(158, 158, 158, 1) !important;
+  color: rgba(35, 35, 35, 1);
+  font-weight: bold;
 }
 
 td a:hover,
 td a:focus {
-  color: rgba(240, 82, 19, 1);
+  color: rgba(35, 35, 35, 1);
 }
 
 td a.button {
-  margin: 0 auto;
+  margin: 0;
+  padding: 10px;
+  width: 100%;
 }
+
 /******************************** SEARCH BAR ********************************/
+
 .search {
   position: absolute;
   border: 1px solid rgba(227,227,227,1);
@@ -339,25 +347,43 @@ td a.button {
 /******************************** BUTTONS ********************************/
 
 .button {
+  width: 100%;
   margin: 10px auto;
   color: rgba(227, 227, 227, 1);
-  background-color: rgba(158, 158, 158, 1);
+  background-color: transparent;
+  border: 1px solid rgba(227, 227, 227, 1);
+  text-transform: uppercase;
 }
 
 .button:hover,
 .button:focus {
   background-color: rgba(240, 82, 19, 1);
+  color: rgba(35, 35, 35, 1);
+  border: 1px solid rgba(227, 227, 227, 1);
 }
 
 /******************************** LINKS ********************************/
 
 a {
   color: rgba(240, 82, 19, 1);
+  font-family: "NexaBold";
 }
 
 a:hover,
-a:focus {
+:focus {
   color: rgba(227, 227, 227, 1);
+}
+
+/******************************** MISC ********************************/
+
+.center {
+  text-align: center;
+}
+
+textarea:focus,
+input:focus {
+    font-weight: bold;
+    color: rgba(240, 82, 19, 1);
 }
 
 /******************************** FOOTER ********************************/
@@ -372,9 +398,9 @@ a:focus {
 }
 
 footer {
-  background: rgba(46, 46, 46, 1);
+  background: rgba(227, 227, 227, 1);
   border-top: 1px solid rgba(158, 158, 158, 1);
-  color: rgba(227, 227, 227, 1);
+  color: rgba(35,35,35,1);
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -382,7 +408,7 @@ footer {
 }
 
 footer hr {
-  border-color: rgba(158, 158, 158, 1);
+  border-color: rgba(35, 35, 35, 1);
   margin: 10px auto;
 }
 
@@ -395,14 +421,77 @@ footer h3 {
   font-weight: bold;
   text-align: center;
   margin: 10px auto;
+  color: rgba(35,35,35,1);
 }
 
 footer p {
   margin: 0;
 }
 
-/******************************** MISC ********************************/
+footer a {
+  color: rgba(35,35,35,1);
+}
 
-.center {
+footer a:focus,
+footer a:hover {
+  color: rgba(240, 82, 19, 1);
+}
+
+/******************************** LOGIN/REGISTER ********************************/
+
+.login {
+  width: 33%;
+}
+
+.register {
+  width: 33%;
+}
+
+@media only screen and (max-width: 768px) {
+  .login {
+    width: 66%;
+  }
+  .register {
+    width: 66%;
+  }
+}
+
+.login .submit,
+.register .submit {
+  outline: none;
+  width: 100%;
+  margin: 10px auto;
+  padding: 15px;
+  color: rgba(227, 227, 227, 1);
+  background-color: transparent;
+  border: 1px solid rgba(227, 227, 227, 1);
+  text-transform: uppercase;
+}
+
+.login .submit:hover,
+.login .submit:focus,
+.register .submit:hover,
+.register .submit:focus {
+  background-color: rgba(240, 82, 19, 1);
+  color: rgba(35, 35, 35, 1);
+  border: 1px solid rgba(227, 227, 227, 1);
+  font-weight: bold;
+}
+
+/******************************** FANTASY ROOM ********************************/
+
+.roomMenu {
+  margin-bottom: 25px;
   text-align: center;
+  color: rgba(227, 227, 227, 1);
+  border: 1px solid rgba(158, 158, 158, 1);
+}
+
+.roomMenu a {
+  color: rgba(227, 227, 227, 1);
+}
+
+.roomMenu a:hover,
+.roomMenu a:focus {
+  color: rgba(240, 82, 19, 1);
 }

@@ -1,14 +1,10 @@
-<div class="register">
+<div class="wrapper register center">
    <form method="POST" action="http://173.80.170.125:8000/register">
-      Username:<br>
-      <input type="text" name="name">
-      Email:<br>
-      <input type="text" name="email">
-      Password:<br>
-      <input type="text" name="password">
-      Confirm Password:<br>
-      <input type="text" name="password_confirmation">
+      <h3>Username</h3><input type="text" name="name">
+      <h3>Email</h3><input type="text" name="email">
+      <h3>Password</h3><input type="password" name="password">
+      <h3>Confirm Password</h3><input type="password" name="password_confirmation">
       <input type="hidden" name="_token">
-      <input type="submit" value="Submit">     
+      <input class="submit" type="submit" value="Submit">
    </form>
 </div>
