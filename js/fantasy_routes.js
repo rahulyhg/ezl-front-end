@@ -46,8 +46,8 @@ fantasy_app.config(['$routeProvider', function ($routeProvider) {
       controller: 'registerController'
     });
 
-  // .when('/fantasy_create', {
-  //    templateUrl : './fantasy/fantasy_create.html',
-  //    controller : 'fantasy_createController'
-  // });
+    .when('/fantasy_create', {
+      templateUrl : './fantasy/fantasy_create.html',
+       controller : 'fantasy_createController'
+    });
 }]);
