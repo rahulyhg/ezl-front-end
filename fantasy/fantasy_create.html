@@ -10,7 +10,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="Name">League Name</label>  
   <div class="col-md-4">
-  <input id="Name" name="Name" type="text" placeholder="League Name" class="form-control input-md" required="">
+  <input id="Name" name="Name" type="text" ng-model='name' placeholder="League Name" class="form-control input-md" required="">
   <span class="help-block">What do you want to call your league?</span>  
   </div>
 </div>
@@ -19,7 +19,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="Team Owners">Team Owners</label>
   <div class="col-md-4">
-    <select id="Team Owners" name="Team Owners" class="form-control">
+    <select id="Team Owners" name="Team Owners" ng-model='amtOfOwners' class="form-control">
       <option value="1">1</option>
       <option value="2">2</option>
       <option value="3">3</option>
@@ -42,25 +42,25 @@
   <div class="col-md-4">
   <div class="checkbox">
     <label for="Regions-0">
-      <input type="checkbox" name="Regions" id="Regions-0" value="1">
+      <input type="checkbox" name="Regions" ng-model='NA' id="Regions-0" value="1">
       NA
     </label>
 	</div>
   <div class="checkbox">
     <label for="Regions-1">
-      <input type="checkbox" name="Regions" id="Regions-1" value="2">
+      <input type="checkbox" name="Regions" ng-model='EU' id="Regions-1" value="2">
       EU
     </label>
 	</div>
   <div class="checkbox">
     <label for="Regions-2">
-      <input type="checkbox" name="Regions" id="Regions-2" value="3">
+      <input type="checkbox" name="Regions" ng-model='SEA' id="Regions-2" value="3">
       SEA
     </label>
 	</div>
   <div class="checkbox">
     <label for="Regions-3">
-      <input type="checkbox" name="Regions" id="Regions-3" value="4">
+      <input type="checkbox" name="Regions" ng-model='EA' id="Regions-3" value="4">
       EA
     </label>
 	</div>
@@ -71,7 +71,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="singlebutton">Submit</label>
   <div class="col-md-4">
-    <button id="singlebutton" name="singlebutton" class="btn btn-success">Submit</button>
+    <button id="singlebutton" name="singlebutton" ng-click='create()'class="btn btn-success">Submit</button>
   </div>
 </div>
 
