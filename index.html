@@ -13,16 +13,13 @@
     <script src="./js/vendor/angular-route.js"></script>
     <script src="./js/vendor/foundation.js"></script>
     <script src="./js/fantasy.js"></script>
-    <script src="./js/fantasy_directives.js"></script>
-    <script src="./js/fantasy_routes.js"></script>
-    <script src="./js/fantasy_controllers.js"></script>
+    <script src="./js/routes/fantasy.js"></script>
+    <script src="./js/directives/fantasy.js"></script>
   </head>
 
   <body>
-    <fantasy-nav-bar></fantasy-nav-bar>
-    <div>
-      <ng-view></ng-view>
-    </div>
+    <fantasy-nav-bar ng-if="!bShow"></fantasy-nav-bar>
+    <ng-view></ng-view>
     <fantasy-footer></fantasy-footer>
   </body>
 

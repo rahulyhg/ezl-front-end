@@ -1,4 +1,4 @@
-<div class="fantasy_create">
+<div ng-controller="fantasy_createController">
    <h2>Making Your Fantasy Come True!</h2>
    <form class="form-horizontal">
 <fieldset>
@@ -8,10 +8,10 @@
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="Name">League Name</label>  
+  <label class="col-md-4 control-label" for="Name">League Name</label>
   <div class="col-md-4">
   <input id="Name" name="Name" type="text" ng-model='name' placeholder="League Name" class="form-control input-md" required="">
-  <span class="help-block">What do you want to call your league?</span>  
+  <span class="help-block">What do you want to call your league?</span>
   </div>
 </div>
 
