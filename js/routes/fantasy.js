@@ -44,10 +44,10 @@ fantasy_app.config(['$routeProvider', function ($routeProvider) {
     .when('/register', {
       templateUrl: './pages/register.html',
       controller: 'registerController'
-    });
+    })
 
     .when('/fantasy_create', {
-      templateUrl : './fantasy/fantasy_create.html',
-       controller : 'fantasy_createController'
-    });
+      templateUrl: './fantasy/fantasy_create.html',
+      controller: 'fantasy_createController'
+    })
 }]);

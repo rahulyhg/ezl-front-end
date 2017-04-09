@@ -13,13 +13,13 @@
     <script src="./js/vendor/angular-route.js"></script>
     <script src="./js/vendor/foundation.js"></script>
     <script src="./js/dashboard.js"></script>
+    <script src="./js/routes/dashboard.js"></script>
+    <script src="./js/directives/dashboard.js"></script>
   </head>
 
   <body ng-controller="db_homeController">
-    <db-nav-bar></db-nav-bar>
-    <div>
-      <ng-view></ng-view>
-    </div>
+    <db-nav-bar ng-if="!bShow"></db-nav-bar>
+    <ng-view></ng-view>
     <db-footer></db-footer>
   </body>
 
